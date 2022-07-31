@@ -6,10 +6,11 @@ public class Operator {
 		//leftShift(32, 1);
 		//isPowerOftwo(4);
 		//and(5,3 );
+		andOrXor(31,20);
 		
 		
 	}
-	static void and(int a,int b) {	
+	static void andOrXor(int a,int b) {	
 //		System.out.println(a|b);
 //		System.out.println(a&b);
 		System.out.println(a^b);	

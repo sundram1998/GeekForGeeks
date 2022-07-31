@@ -14,8 +14,8 @@ public class VariationQuestion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int arr[]= {1,5,3,2,4};
-		int missingNumber=missingNumber(arr, 5 );
+		int arr[]= {1,5,3,2};
+		int missingNumber=missingNumber(arr, 4 );
 		System.out.println(missingNumber);
 
 	}

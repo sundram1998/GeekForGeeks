@@ -10,7 +10,7 @@ public class Print_1_to_N {
 	static void tailRecursive(int n,int k) {
 		if(n==0)
 			return;
-		System.out.print(k);
+		System.out.print(" "+k);
 		tailRecursive(n-1, k+1); 
 	}
 

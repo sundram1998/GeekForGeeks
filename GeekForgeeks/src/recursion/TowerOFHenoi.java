@@ -12,7 +12,7 @@ public class TowerOFHenoi {
 	}
 
 	public static void main(String[] args) {
-		towerOFHenoi(3, 1, 2, 3);
+		towerOFHenoi(4, 1, 2, 3);
 	}
 
 }

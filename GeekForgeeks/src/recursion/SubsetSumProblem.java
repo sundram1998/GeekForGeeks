@@ -9,8 +9,8 @@ public class SubsetSumProblem {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int arr[] = { 10, 15, 20 };
-		int ans = subset(arr, 3, 25);
+		int arr[] = { 10, 15, 20,5,15 };
+		int ans = subset(arr, 5, 25);
 		System.out.println(ans);
 
 	}

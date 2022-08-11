@@ -12,7 +12,6 @@ public class SubsetSumProblem {
 		int arr[] = { 10, 15, 20,5,15 };
 		int ans = subset(arr, 5, 25);
 		System.out.println(ans);
-
 	}
 
 }

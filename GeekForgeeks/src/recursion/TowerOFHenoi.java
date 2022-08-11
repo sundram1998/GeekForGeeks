@@ -1,18 +1,22 @@
 package recursion;
 
 public class TowerOFHenoi {
-	static void towerOFHenoi(int n, int a, int b, int c) {
+	static long towerOFHenoi(int n, int from, int to, int aux) {
 		if (n == 1) {
-			System.out.println("Move 1 from " + a + " to " + c);
-			return;
+			System.out.println("Move 1 from " + from + " to " + aux);
+			return 1;
 		}
-		towerOFHenoi(n - 1, a, c, b);
-		System.out.println("Move " + n + " from " + a + " to " + c);
-		towerOFHenoi(n - 1, b, a, c);
+		long moves=towerOFHenoi(n - 1, from, aux, to);
+		System.out.println("Move " + n + " from " + from + " to " + aux);
+		moves++;
+		moves+=towerOFHenoi(n - 1, to, from, aux);
+		return moves;
 	}
 
 	public static void main(String[] args) {
-		towerOFHenoi(4, 1, 2, 3);
+		long moves=towerOFHenoi(2, 1, 2, 3);
+		System.out.println(moves);
+		
 	}
 
 }

@@ -1,7 +1,7 @@
 package arrays;
 
 public class RemoveDublicateElement {
-	// complexity O(n) and space complexity Theta(1) 
+	// complexity O(n) and space complexity O(1) 
 	static int removeDublicates(int[] arr) {
 		int n=arr.length;
 		int res=1;

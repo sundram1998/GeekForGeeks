@@ -13,7 +13,7 @@ public class CheckkthBitIsSetOrNot {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		setBitOrNot(8, 3);
+		setBitOrNot(10, 1);
 	}
 
 }

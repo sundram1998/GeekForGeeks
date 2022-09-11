@@ -7,11 +7,12 @@ public class PrintingAllPermutationsOfString {
 		i=0;
 		if(i==s.length()-1) {
 			System.out.print(s+" ");
-			return;
+			return "";
 		}
 		for(int j=i;j<s.length();j++) {
-			Collections.swap(s.charAt(i),s.charAt(j));
+			Collections.swap(null, s.charAt(i),s.charAt(j));
 		}
+		return s;
 	}
 
 	public static void main(String[] args) {

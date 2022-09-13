@@ -23,7 +23,7 @@ public class LeaderInAnArray {
 		int[] temp=new int[n];
 		temp[0]=arr[n-1];
 		int temp_size=1;
-		int curr_leader=arr[n-1];
+		int curr_leader=arr[n-1]; 
 		for(int i=n-2;i>=0;i--) {
 			if(curr_leader<arr[i]) {
 				curr_leader=arr[i];

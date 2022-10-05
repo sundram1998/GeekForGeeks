@@ -1,5 +1,5 @@
 package arrays;
-
+//Sorted Array
 public class RemoveDublicateElement {
 	// complexity O(n) and space complexity O(1) 
 	static int removeDublicates(int[] arr) {
@@ -37,7 +37,7 @@ public class RemoveDublicateElement {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] array= {10,20,20,30,30,40};
-		System.out.println(removeDublicates(array));
+		System.out.println(" length: "+removeDublicates(array));
 		//System.out.println("and size is "+removeDublicateElement(array));
 
 	}

@@ -22,7 +22,7 @@ public class PrimeFactors {
 					n=n/i;
 				}
 			}
-			if (n > 1)
+			if (n > 3)
 				System.out.print(n);
 		}
 
@@ -54,9 +54,8 @@ public class PrimeFactors {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		primeFactor(32);
-		primeFactorEfficient(32);
-
+//		primeFactor(32);
+		primeFactorEfficient(12);
 	}
 
 }

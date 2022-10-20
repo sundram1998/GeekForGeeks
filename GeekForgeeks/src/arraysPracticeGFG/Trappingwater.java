@@ -1,4 +1,4 @@
-package arrays;
+package arraysPracticeGFG;
 
 public class Trappingwater {
 	static int traingWater(int units[]) {

@@ -1,4 +1,4 @@
-package arrays;
+package arraysPracticeGFG;
 
 public class LeaderInAnArray {
 	// Naive Method

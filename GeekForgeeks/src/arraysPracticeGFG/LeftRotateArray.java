@@ -1,4 +1,4 @@
-package arrays;
+package arraysPracticeGFG;
 
 public class LeftRotateArray {
 	static void leftRotateOne(int[] arr) {

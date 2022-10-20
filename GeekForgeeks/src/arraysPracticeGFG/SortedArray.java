@@ -1,4 +1,4 @@
-package arrays;
+package arraysPracticeGFG;
 
 public class SortedArray {
 	static boolean isSorted(int[] arr) {

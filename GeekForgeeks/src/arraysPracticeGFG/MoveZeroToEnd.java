@@ -1,4 +1,4 @@
-package arrays;
+package arraysPracticeGFG;
 
 public class MoveZeroToEnd {
 	static void swap(int[] arr, int i, int j) {

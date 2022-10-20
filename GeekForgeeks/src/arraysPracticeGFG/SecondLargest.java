@@ -1,10 +1,10 @@
-package arrays;
+package arraysPracticeGFG;
 
 public class SecondLargest {
 	static int getSecond(int[] arr) {
 		int n = arr.length;
 		int secLargest = -1;
-		int largest = arrays.LargestElement.getLargest(arr);
+		int largest = arraysPracticeGFG.LargestElement.getLargest(arr);
 		System.out.println(arr[largest]);
 		for (int i = 0; i < n; i++) {
 			if (arr[i] != arr[largest]) {
@@ -39,10 +39,10 @@ public class SecondLargest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] array = {35 ,1 ,10 ,34 ,1};
+		int[] array = {884, 337 ,689, 587, 748 ,308 ,451, 785 ,682 ,600, 733, 537 ,403 ,188 ,162 ,562 ,274 ,513 ,383 ,617 ,662 ,508 ,111 ,57 ,160};
 //		System.out.println(getSecond(array));
 		System.out.println(getSecondlargest(array));
-
+ 
 	}
 
 }

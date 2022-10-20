@@ -1,4 +1,4 @@
-package arrays;
+package arraysPracticeGFG;
 
 public class ReverseAnArray {
 	static void reverseArray(int[] arr) {

@@ -1,4 +1,4 @@
-package arrays;
+package arraysPracticeGFG;
 public class LeftrotateAnArrayByOne {
 	static void leftRotate(int[] arr) {
 		int n=arr.length;

@@ -1,4 +1,4 @@
-package practiceGeekForGeek;
+package practiceGFGArrays;
 
 public class Comptetion {
 	

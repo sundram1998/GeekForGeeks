@@ -1,4 +1,4 @@
-package practiceGeekForGeek;
+package practiceGFGArrays;
 
 public class MinimumDistance {
 	static int naiveSolution(int[] arr, int x, int y) {

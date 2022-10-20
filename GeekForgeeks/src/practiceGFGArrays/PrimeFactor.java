@@ -1,4 +1,4 @@
-package practiceGeekForGeek;
+package practiceGFGArrays;
 
 public class PrimeFactor {
 	static void primeFactor(int n) {

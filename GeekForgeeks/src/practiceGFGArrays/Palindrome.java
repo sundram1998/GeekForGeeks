@@ -1,4 +1,4 @@
-package practiceGeekForGeek;
+package practiceGFGArrays;
 
 public class Palindrome {
 	static int fact(int n) {

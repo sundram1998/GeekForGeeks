@@ -1,4 +1,4 @@
-package practiceGeekForGeek;
+package practiceGFGArrays;
 
 import java.util.Scanner;
 public class SumOfMultiplesOf3and5 {

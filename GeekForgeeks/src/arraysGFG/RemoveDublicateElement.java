@@ -1,4 +1,4 @@
-package arraysPracticeGFG;
+package arraysGFG;
 //Sorted Array
 public class RemoveDublicateElement {
 	// complexity O(n) and space complexity O(1) 

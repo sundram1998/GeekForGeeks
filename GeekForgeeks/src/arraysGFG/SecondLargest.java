@@ -1,10 +1,10 @@
-package arraysPracticeGFG;
+package arraysGFG;
 
 public class SecondLargest {
 	static int getSecond(int[] arr) {
 		int n = arr.length;
 		int secLargest = -1;
-		int largest = arraysPracticeGFG.LargestElement.getLargest(arr);
+		int largest = arraysGFG.LargestElement.getLargest(arr);
 		System.out.println(arr[largest]);
 		for (int i = 0; i < n; i++) {
 			if (arr[i] != arr[largest]) {

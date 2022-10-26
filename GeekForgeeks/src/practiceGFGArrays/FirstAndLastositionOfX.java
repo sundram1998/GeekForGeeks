@@ -1,6 +1,7 @@
 package practiceGFGArrays;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class FirstAndLastositionOfX {
 	//complexity O(n)

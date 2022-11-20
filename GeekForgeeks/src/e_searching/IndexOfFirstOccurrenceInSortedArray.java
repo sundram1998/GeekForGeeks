@@ -1,4 +1,4 @@
-package e_sorting;
+package e_searching;
 //Note: This is for Sorted Array
 public class IndexOfFirstOccurrenceInSortedArray {
 	// Iterative Solution

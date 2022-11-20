@@ -1,4 +1,4 @@
-package e_sorting;
+package e_searching;
 
 public class IndexOfLastOccuranceInSortedArray {
 // Recursive solution

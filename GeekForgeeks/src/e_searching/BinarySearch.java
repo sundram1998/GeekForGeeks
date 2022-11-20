@@ -1,4 +1,4 @@
-package e_sorting;
+package e_searching;
 public class BinarySearch {
 	// recursive solution
 	static int bSearchRecursive(int[] arr,int low,int high,int x) {

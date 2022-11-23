@@ -1,7 +1,17 @@
 package e_searching;
 
 public class SearchInSortedRotatedArray {
+	// Naive Approach
+	static int search(int arr[], int x) {
+		int n = arr.length - 1;
+		for (int i = 1; i <= n; i++) {
+			if (arr[i] == x)
+				return i;
+		}
+		return -1;
+	}
 
+	// Efficient Aproach
 	static int searchInSortedRotatedArray(int arr[], int x) {
 		int n = arr.length - 1;
 		int low = 0, high = n;

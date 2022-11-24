@@ -1,5 +1,5 @@
 package e_searching;
-//Note: This is for Sorted Array
+// Note: This is for Sorted Array
 public class IndexOfFirstOccurrenceInSortedArray {
 	// Iterative Solution
 	static int firstOcc(int arr[], int x) {
@@ -39,8 +39,8 @@ public class IndexOfFirstOccurrenceInSortedArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] array = {2,2,3,3};
-		int x = 4;
+		int[] array = {1,1,1,1,1,2,2,3,3};
+		int x = 1;
 		System.out.println(firstOccurrence(array, 0, array.length - 1, x));
 		System.out.println(firstOcc(array, x));
 	}

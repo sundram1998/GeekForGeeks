@@ -39,8 +39,8 @@ public class IndexOfLastOccuranceInSortedArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] array = { 6, 7, 8, 9 };
-		int x = 3;
+		int[] array = { 0,0,0,1,1,1,1,1};
+		int x = 1;
 		System.out.println(lastOccurrence(array, 0, array.length - 1, x));
 		System.out.println(lastOccur(array, x));
 

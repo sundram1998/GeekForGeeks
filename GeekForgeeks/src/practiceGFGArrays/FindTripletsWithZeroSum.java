@@ -3,7 +3,7 @@ package practiceGFGArrays;
 import java.util.Arrays;
 
 public class FindTripletsWithZeroSum {
-	
+	//Works only for sorted array
 	public  boolean findTriplets(int arr[]) {
 		
 		Arrays.sort(arr);	

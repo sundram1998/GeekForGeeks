@@ -34,12 +34,12 @@ public class IndexOfFirstOccurrenceInSortedArray {
 				return mid;
 			else
 				return firstOccurrence(arr, low, mid - 1, x);
-		}
+		} 
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] array = {1,1,1,1,1,2,2,3,3};
+		int[] array = {1,1 ,1,1,1,2,2,3,3};
 		int x = 1;
 		System.out.println(firstOccurrence(array, 0, array.length - 1, x));
 		System.out.println(firstOcc(array, x));

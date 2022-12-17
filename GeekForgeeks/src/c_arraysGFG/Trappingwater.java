@@ -6,7 +6,7 @@ public class Trappingwater {
 		int res=0;
 		int n=arr.length;
 		for(int i=1;i<n-1;i++) {
-			int Lmax=arr[i];
+			int Lmax=arr[i];    //int arr[]= {5,0,6,2,3};
 			for(int j=0;j<i;j++) {
 				Lmax=Math.max(Lmax, arr[j]);
 			}	
@@ -44,8 +44,8 @@ public class Trappingwater {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[]= {5,0,6,2,3};
-		System.out.println(trapingWater(arr));
-		System.out.println(trapWater(arr));
+		System.out.println("traped unit is : "+trapingWater(arr));
+		System.out.println("traped unit is : "+trapWater(arr));
 	}
 
 }

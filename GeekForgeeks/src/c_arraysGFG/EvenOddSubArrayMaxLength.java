@@ -1,6 +1,6 @@
 package c_arraysGFG;
 
-public class EvenOddSunArrayMaxLength {
+public class EvenOddSubArrayMaxLength {
 	
 	static int maxLengthOddEven(int[] arr) {
 		int n=arr.length;

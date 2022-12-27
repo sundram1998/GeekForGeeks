@@ -5,16 +5,13 @@ public class FrequenciesInSortedArray {
 	static void frequenciesInSortedArray(int[] arr) {
 		int n=arr.length;
 		int count=1;
-		for(int i=0;i<n;i++) {
-			if(i==n-1 && arr[i]!=arr[n-2]) {
-				System.out.println("Frequency of "+" "+arr[i]+" is"+" "+count);
-				break;
-			}
-			if(arr[i]==arr[i+1]) {
+		for(int i=1;i<n;i++) {
+			if(arr[i]==arr[i-1]) {
 				count++;
-			}
+			}  //int[] arr = { 10, 10, 20,20,30, 30 };
+			else if(n==1|| arr[n-1]!=arr[n-2]) System.out.println("Frequency of "+" "+arr[i]+" is"+" "+count);
 			else {
-				System.out.println("Frequency of "+" "+arr[i]+" is"+" "+count);
+				System.out.println("Frequency of "+" "+arr[i-1]+" is"+" "+count);
 				count=1;
 			}
 		}
@@ -55,9 +52,9 @@ public class FrequenciesInSortedArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 10, 10, 20,20,30, 30 };
-		frequencies(arr);
+//		frequencies(arr);
 //		frequency(arr);
-//		frequenciesInSortedArray(arr);
+		frequenciesInSortedArray(arr);
 
 	}
 

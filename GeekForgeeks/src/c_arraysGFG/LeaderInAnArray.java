@@ -1,5 +1,7 @@
 package c_arraysGFG;
 
+import java.util.ArrayList;
+
 public class LeaderInAnArray {
 	// Naive Method
 	static void leader(int[] arr) {
@@ -35,6 +37,26 @@ public class LeaderInAnArray {
 			System.out.print(" "+temp[i]+" ");
 		}
 	}
+	
+	 static ArrayList<Integer> leaders(int arr[], int n){
+	        // Your code here
+	        int curL=arr[n-1];
+	        ArrayList<Integer> al=new ArrayList<Integer>();
+	        al.add(arr[n-1]);
+	        for(int i=n-2;i>=0;i--){
+	            if(arr[i]>=curL){
+	                curL=arr[i];
+	                al.add(arr[i]);
+	            }
+	        }
+	        ArrayList<Integer> revArrayList = new ArrayList<Integer>();
+	        for (int i = al.size() - 1; i >= 0; i--) {
+	            // Append the elements in reverse order
+	            revArrayList.add(al.get(i));
+	        }
+	        // Return the reversed arraylist
+	        return revArrayList;
+	    }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] array= {10,3,4,7,5,2};

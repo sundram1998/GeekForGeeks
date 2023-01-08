@@ -5,9 +5,52 @@ import java.util.Arrays;
 
 public class StockBuysell {
 	// https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1?page=1&category[]=Arrays&curated[]=1&sortBy=submissions
-	 static ArrayList<ArrayList<Integer> > stockBuySell1(int A[], int n) {
+	
+	static ArrayList<ArrayList<Integer> > stockBuySell2(int arr[], int n) {
+        // code here
+         ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+
+        int buy=0;
+
+        int sell=n-1;
+
+        int i=1;
+
+        while(i<n) {
+
+            while(i<n&&arr[buy]>=arr[i]) {
+
+                buy=i;
+
+                i++;
+
+            }
+
+            if(buy==n-1) {
+
+                break;
+
+            }
+
+            while(i<n&&arr[i]>=arr[i-1]) {
+
+                sell=i;
+
+                i++;
+
+            }
+
+            list.add(new ArrayList<Integer>(Arrays.asList(buy, sell)));
+
+            buy=i;
+
+        }
+
+        return list;
+    }
+	
+	static ArrayList<ArrayList<Integer> > stockBuySell1(int A[], int n) {
 	        // code here
-	        // ArrayList<ArrayList<Integer> > al=new ArrayList<ArrayList<Integer> >();
 	          ArrayList<ArrayList<Integer>> res = new ArrayList<>();
 
 	        int i=0;
@@ -101,6 +144,7 @@ public class StockBuysell {
 //		System.out.println(maxProfitStock(price));
 		System.out.println(stockBuySell(price, 8));
 		System.out.println(stockBuySell1(price, 8));
+		System.out.println(stockBuySell2(price, 8));
 	}
 
 }

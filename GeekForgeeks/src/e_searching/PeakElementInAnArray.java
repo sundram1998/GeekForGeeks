@@ -24,14 +24,14 @@ public class PeakElementInAnArray {
 		int low = 0, high = n - 1;
 		while (low <= high) {
 			int mid = (low + high) / 2;
-			if (mid == 0 || arr[mid] > arr[mid - 1] && mid == n - 1 || arr[mid] > arr[mid + 1]) {
+			if (mid == 0 || arr[mid - 1] <= arr[mid] && 
+				mid == n - 1 || arr[mid + 1] <= arr[mid]) {
 				return arr[mid];
-			} else {
-				if (arr[mid] < arr[mid - 1])
-					high = mid - 1;
-				else
-					low = mid + 1;
 			}
+			if (mid > 0 && arr[mid] <= arr[mid - 1])
+				high = mid - 1;
+			else
+				low = mid + 1;
 		}
 		return -1;
 	}
@@ -39,7 +39,7 @@ public class PeakElementInAnArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[] = { 10, 30, 40, 30, 45, 60, 77, 67 };
-		int a[]= {2,13};
+		int a[] = { 2, 13 };
 		System.out.println(getPeak(arr));
 		System.out.println(getpeakBinary(a));
 	}

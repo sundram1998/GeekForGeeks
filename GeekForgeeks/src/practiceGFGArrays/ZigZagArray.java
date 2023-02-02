@@ -2,9 +2,7 @@ package practiceGFGArrays;
 // https://practice.geeksforgeeks.org/problems/convert-array-into-zig-zag-fashion1638/1?page=1&difficulty[]=-1&curated[]=1&sortBy=submissions
 
 // Hold ctrl and hover on link to see problem
-
 public class ZigZagArray {
-
 	static void makeZigZagArray(int[] arr) {
 		int n = arr.length;
 		for (int i = 0; i < n; i++) {
